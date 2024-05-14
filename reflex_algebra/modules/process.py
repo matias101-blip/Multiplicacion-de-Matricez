@@ -31,15 +31,12 @@ def AB(A, B, rA, rB, cA, cB):
                     Bi = B[i][CbI]
                     Aj = A[CaJ][i]
                     resultado += Aj * Bi
-                print(resultado)
                 ABc.append(resultado)
-                print(ABc)
                 if cB != 1:
                     CbI += 1
 
             AB.append(ABc)
             CaJ += 1
-        print(f"El resultado es {AB}")
         return AB
     else:
         return False
